@@ -5,18 +5,16 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 88,
     // python formatting and linting
+    "python.pythonPath": "${workspaceFolder}/.venv/Scripts/python",
     "python.analysis.memory.keepLibraryAst": true,
     "python.formatting.provider": "black",
-    "python.formatting.blackPath": "${workspaceFolder}/scripts/poetry-run.bat",
     "python.formatting.blackArgs": [
-        "black",
-        "--line-length 88",
+        "--line-length=88",
     ],
+    "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
-    "python.linting.flake8Path": "${workspaceFolder}/scripts/poetry-run",
     "python.linting.flake8Args": [
-        "flake8",
-        "--max-line-length 88",
+        "--max-line-length=88",
         "--extend-ignore=E203,W503",
     ],
     "python.linting.flake8CategorySeverity.E": "Warning",
