@@ -1,22 +1,19 @@
 {
     "editor.formatOnSave": true,
     "files.eol": "\n",
-    "editor.tabSize": 2,
+    "editor.tabSize": 4,
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 88,
-    // python formatting and linting
+    // python typing, formatting and linting
     "python.pythonPath": "${workspaceFolder}/.venv/Scripts/python",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/.venv/Lib/site-packages"
+    ],
     "python.analysis.memory.keepLibraryAst": true,
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": [
         "--line-length=88",
-    ],
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Args": [
-        "--max-line-length=88",
-        "--extend-ignore=E203,W503",
-    ],
-    "python.linting.flake8CategorySeverity.E": "Warning",
-    "python.linting.flake8CategorySeverity.F": "Warning",
+    ]
 }

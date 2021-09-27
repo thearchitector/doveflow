@@ -1,1 +1,10 @@
+# environment settings
 .venv
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# caches
+.hypothesis
+.pytest_cache
+__pycache__
